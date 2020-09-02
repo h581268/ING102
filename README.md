@@ -9,7 +9,6 @@ For å få tilgang til trello board, send e-post til chris.tvedt@gmail.com så f
 
 - Bjørnar Rysjedal Tonning
 - Christian Tjønneland Skilbrei
-- Charlotte Storemark
 - Daniel Haugland Mikkelsen
 - Eilert Skram
 - Chris Tvedt
