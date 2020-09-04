@@ -1,0 +1,162 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #F6E7F6;
+}
+
+h1 {
+    color: #082D7F;
+    font-family: sans-serif;
+    font-size: 42px;
+}
+
+h2 {
+    color: #082D7F;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 26px;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: #082D7F;
+    background-color: #082D7F;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline;
+    font-family: sans-serif;
+    padding-right: 15px;
+    font-size: 22;
+}
+
+.background-ladepunkt {
+    background-image: url("../img/bakgrunn_ladepunkt.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200%;
+    /* (bilde høyde / bilde bredde * div bredde)*/
+}
+
+.logo-div {
+    display: inline-flex;
+    position: absolute;
+    width: 360px;
+    height: 95px;
+    left: 180px;
+    top: 107px;
+    justify-content: space-between;
+}
+
+.tilbake-knapp {
+    position: absolute;
+    width: 250px;
+    height: 95px;
+    left: 1405px;
+    top: 107px;
+    filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
+    background-color: #082D7F;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 95px;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 40px;
+}
+
+.ladepunkt-navn {
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    left: 824px;
+    top: 202px;
+    text-align: center;
+}
+
+.lokasjon {
+    position: absolute;
+    width: 642px;
+    height: 673px;
+    left: 181px;
+    top: 350px;
+    background: #7BC7DF;
+    border-radius: 20px;
+    filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+}
+
+.map {
+    display: inline-block;
+    padding: 50px 0 20px 0;
+}
+
+#geo-lokasjon-text {
+    color: #082D7F;
+}
+
+.geo-lokasjon {
+    display: inline-block;
+    width: 432px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.beskrivelse-av-ladepunkt {
+    position: absolute;
+    width: 550px;
+    height: 560px;
+    left: 884px;
+    top: 350px;
+}
+
+.fasiliteter,
+.fasilitet {
+    display: block;
+    line-height: 30px;
+}
+
+.beregn-ladetid {
+    position: absolute;
+    width: 698.57px;
+    height: 95px;
+    left: 611px;
+    top: 1100px;
+    background: #082D7F;
+    border-radius: 40px;
+}
+
+.ladetid-knapp-text {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 26;
+    float: right;
+    padding-right: 50px;
+    vertical-align: middle;
+    line-height: 95px;
+}
+
+.dropdown {
+    display: inline-block;
+    width: 315px;
+    height: 60px;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    vertical-align: middle;
+    line-height: 95px;
+}
