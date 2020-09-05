@@ -10,6 +10,7 @@ h1 {
     color: #082D7F;
     font-family: sans-serif;
     font-size: 42px;
+    margin: 0;
 }
 
 h2 {
@@ -42,19 +43,17 @@ li {
     font-size: 22px;
 }
 
-.logo {
-    grid-column: 2;
-    grid-row: 1;
-    width: min-content;
-}
-
 .logo-div {
     display: inline-grid;
     grid-template-columns: auto auto;
-    width: 360px;
-    height: 95px;
-    justify-content: space-between;
-    padding-top: 2em;
+    grid-column: 2;
+    grid-row: 1;
+    width: max-content;
+    height: max-content;
+    column-gap: 2em;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 1em;
 }
 
 .tilbake-knapp {
