@@ -1,7 +1,13 @@
-let dropdown_beregnladetid = document.getElementById('kwh');
-let knapp_beregnladetid = document.getElementById('bergen-ladetid-knapp');
+// Knapp for å vise riktig ladetid for valgt batterikapasitet
+let knappBeregnladetid = document.getElementById('bergen-ladetid-knapp');
 
-knapp_beregnladetid.addEventListener("click", () => {
-    console.log(dropdown_beregnladetid.value);
-    document.getElementById('graf-og-tabell').style.display = "block";
-});
+// tar ibruk riktig verdi i dropdown og viser riktig tabell og graf
+let beregnLadetid = () => {
+    knappBeregnladetid.addEventListener("click", () => {
+        console.log(document.getElementById('kwh').value);
+        document.getElementById('graf-og-tabell').style.display = "block";
+    });
+}
+
+// bruker onclick metoden for å vise riktig ladetid for valgt batterikapasitet
+knappBeregnladetid.onclick = beregnLadetid();
