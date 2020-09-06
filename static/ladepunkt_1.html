@@ -1,8 +1,7 @@
-<html>
+<html lang="no">
 
 <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
+
     <title>Lad i vannkanten</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -47,11 +46,13 @@
                 <li class="fasilitet">Barer</li>
                 <li class="fasilitet">Restauranter</li>
                 <li class="fasilitet">Turområder</li>
-                <li class="fasilitet">Kiosk</li>
-                <ul>
-                    <li class="fasilitet">7-Eleven</li>
-                    <li class="fasilitet">Narvesen</li>
-                </ul>
+                <li class="fasilitet">Kiosk
+                    <ul class="fasiliteter">
+                        <li class="fasilitet">7-Eleven</li>
+                        <li class="fasilitet">Narvesen</li>
+                    </ul>
+                </li>
+
             </ul>
         </section>
     </div>
@@ -65,10 +66,11 @@
         </div>
         <button id="bergen-ladetid-knapp"><strong class="ladetid-knapp-text">Beregn ladetid</strong></button>
     </div>
-    <img src="../img/grafogtabell70kwh.png" class="graf-og-tabell" id="graf-og-tabell"></img>
+    <img src="../img/grafogtabell70kwh.png" class="graf-og-tabell" id="graf-og-tabell" alt="graf-og-tabell">
     <img src="../img/waves.png" alt="bølger" class="waves">
+    <script src="../js/index.js" type="text/javascript"></script>
 </body>
-<script src="../js/index.js" type="text/javascript"></script>
+
 <!--  Laster javascript på slutten av HTML slik at siden skal begynne å laste andre elementer først så brukeren ser noe på skjermen, da oppfatter brukeren siden som raskere.-->
 
 </html>
