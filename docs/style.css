@@ -25,6 +25,10 @@ h3 {
     font-size: 26px;
 }
 
+p {
+    color: #082D7F;
+}
+
 hr {
     height: 2px;
     border-width: 0;
