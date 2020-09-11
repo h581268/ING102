@@ -119,7 +119,7 @@ li {
     justify-content: center;
 }
 
-.map {
+#kart {
     display: grid;
     justify-self: center;
     align-self: end;
