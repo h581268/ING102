@@ -1,5 +1,5 @@
 //Knapp for å velge fylke
-let knappVelgFylke = document.getElementById("valgt-fylke");
+let knappVelgFylke = document.getElementById("valgt-fylke-knapp");
 // Hvis knappen blir funnet på siden
 if (knappVelgFylke) {
     let velgFylke = () => {

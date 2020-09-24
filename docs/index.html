@@ -9,41 +9,34 @@
 </head>
 
 <body>
-    <table style="width: 40%">
-        <tr>
-            <td>
-                <a href="index.html" class="logo-div">
-                    <img src="./img/Logo.png" alt="logo">
-                    <h1> ChaBo AS</h1>
-                </a>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2> Fremtiden på sjøen! </h2>
-                <p> Vi i Chabo AS vil gjøre det lettest mulig for deg for å finne ditt nærmeste ladepunkt eller finne de nødvendige ladepunktene for din el-båt tur! Vi har ladepunkter i hele Norge!</p>
-            </td>
+    <a href="index.html" class="logo-div">
+        <img src="./img/Logo.png" alt="logo">
+        <h1> ChaBo AS</h1>
+    </a>
+    <a href="vestland.html" class="tilbake-knapp">Tilbake</a>
+    <img src="img/Sun.png" alt="sol" class="sun">
 
-            <td>
-                <img src="./img/Kart_Norge.png" alt="Norges Kart" width="421" height="601" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2> Finn ladepunkt</h2>
-                <label for="ladepunkt">Velg et ladepunkt:</label>
+    <div id="main">
+        <section id="about">
+            <h1>Framtiden på sjøen!</h1>
+            <p id="about-text">
+                Vi i Chabo AS vil gjøre det lettest mulig for deg for å finne ditt nærmeste ladepunkt eller finne de nødvendige ladepunktene for din el-båt tur! Vi har ladepunkter i hele Norge!
+            </p>
+            <img src="./img/Kart_Norge.png" alt="kart-norge-ladepunkter" width="300em" height="400em" id="kart-norge">
+        </section>
+        <div id="choose-area">
+            <h2>Hvor ønsker du å lade?</h2>
+            <div class="dropdown">
                 <select name="ladepunkt" id="ladepunkt">
-					  <option value="Vestland">Vestland</option>
-					  <option value="Rogaland">Rogaland</option>
-					</select>
-                <button type="button" id="valgt-fylke">Finn Ladepunkt!</button>
-            </td>
-            <td>
-            </td>
-        </tr>
-    </table>
+                    <option value="Vestland">Vestland</option>
+                    <option value="Rogaland">Rogaland</option>
+                </select>
+            </div>
+            <button type="button" id="valgt-fylke-knapp">Finn Ladepunkt!</button>
+        </div>
+    </div>
+    <img src="./img/waves.png" alt="bølger-illustrasjon" class="waves">
+    <img src="./img/lader.png" alt="lader-illustrasjon" id="lader">
     <script src="./js/index.js"></script>
 </body>
 

@@ -35,6 +35,11 @@ hr {
     background-color: #082D7F;
 }
 
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
 ul {
     display: inline;
 }
@@ -81,7 +86,7 @@ li {
 
 .sun {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / 3;
     width: 15em;
     height: 15em;
     justify-self: end;
@@ -185,6 +190,7 @@ li {
     display: grid;
     width: 315px;
     height: 60px;
+    text-align: center;
     background: #FFFFFF;
     border: none;
     box-sizing: border-box;
@@ -192,17 +198,18 @@ li {
     justify-self: start;
     align-self: center;
     margin-left: 17.5px;
+    cursor: pointer;
 }
 
-.dropdown:after {
+.dropdown:before {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #082D7F;
-    position: absolute;
-    top: 50%;
-    right: 250px;
+    position: relative;
+    top: 2em;
+    left: 17em;
     content: "";
 }
 
@@ -218,6 +225,8 @@ li {
     background-color: #ffffff;
     appearance: none;
     cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 #bergen-ladetid-knapp {
@@ -240,5 +249,72 @@ li {
     grid-row: 5;
     grid-column: 1 / span 3;
     max-width: 100%;
-    margin: 0;
+    margin: auto;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-column: 2;
+    grid-row: 2;
+    padding-top: 1.5em;
+    padding-left: 4em;
+}
+
+#about {
+    display: grid;
+    width: 50%;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+#choose-area {
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-column: 2;
+    grid-row: 2 / 4;
+    row-gap: 3em;
+    justify-content: center;
+}
+
+#kart-norge {
+    padding-left: 3em;
+}
+
+#about-text {
+    padding-left: 3em;
+}
+
+#valgt-fylke-knapp {
+    justify-self: center;
+    width: 200px;
+    height: 75px;
+    filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
+    background-color: #082D7F;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    border-radius: 40px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lader {
+    grid-column: 3;
+    grid-row: 2 / span 5;
+    align-self: end;
+    justify-self: end;
+}
+
+#ladepunkter {
+    display: inline-grid;
+    grid-column: 2;
+    grid-row: 3;
+    gap: 3em;
+    justify-content: center;
 }
