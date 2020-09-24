@@ -17,7 +17,7 @@ if (knappVelgFylke) {
 
 
 // Knapp for å vise riktig ladetid for valgt batterikapasitet
-let knappBeregnladetid = document.getElementById("bergen-ladetid-knapp");
+let knappBeregnladetid = document.getElementById("ladetid-knapp");
 // Hvis knappen blir funnet på siden
 if (knappBeregnladetid) {
     // tar ibruk riktig verdi i dropdown og viser riktig tabell og graf

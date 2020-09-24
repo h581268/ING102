@@ -2,35 +2,47 @@ body {
     display: grid;
     grid-template-columns: 20% auto 20%;
     background-color: #F6E7F6;
-    padding-top: 50px;
+    padding-top: 3em;
     margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+}
+
+img {
+    border-radius: 2em;
+    filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 h1 {
     color: #082D7F;
     font-family: sans-serif;
-    font-size: 42px;
+    font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
     color: #082D7F;
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     margin-bottom: 0;
 }
 
 h3 {
     font-family: sans-serif;
-    font-size: 26px;
+    font-size: 1.5em;
 }
 
 p {
+    font-family: sans-serif;
     color: #082D7F;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 hr {
-    height: 2px;
+    height: .2em;
     border-width: 0;
     background-color: #082D7F;
 }
@@ -47,8 +59,8 @@ ul {
 li {
     display: inline;
     font-family: sans-serif;
-    padding-right: 15px;
-    font-size: 22px;
+    padding-right: .8em;
+    font-size: 1.3em;
 }
 
 .logo-div {
@@ -68,17 +80,17 @@ li {
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
-    width: 200px;
-    height: 75px;
+    width: 6em;
+    height: 2.5em;
     filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
     background-color: #082D7F;
     color: #ffffff;
     text-align: center;
     vertical-align: middle;
-    line-height: 75px;
+    line-height: 2.5em;
     font-family: sans-serif;
-    font-size: 30px;
-    border-radius: 40px;
+    font-size: 1.8em;
+    border-radius: 10em;
     margin-top: 1em;
     margin-right: 2em;
     text-decoration: none;
@@ -96,20 +108,16 @@ li {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
-    align-self: end;
-    width: 350px;
-    height: 70px;
-    text-align: center;
     padding-bottom: 5em;
 }
 
 .lokasjon-og-beskrivelse {
     display: inline-grid;
-    grid-template-columns: auto auto;
-    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
     grid-column: 2;
     grid-row: 2;
-    padding-bottom: 30px;
+    padding-bottom: 2.5em;
 }
 
 .lokasjon {
@@ -118,7 +126,7 @@ li {
     width: max-content;
     height: max-content;
     background: #7BC7DF;
-    border-radius: 20px;
+    border-radius: 2em;
     filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
     justify-content: center;
@@ -128,7 +136,7 @@ li {
     display: grid;
     justify-self: center;
     align-self: end;
-    padding: 30px;
+    padding: 2em;
 }
 
 #geo-lokasjon-text {
@@ -139,19 +147,19 @@ li {
 
 .geo-lokasjon {
     display: grid;
-    width: 430px;
-    height: 70px;
+    width: 80%;
+    height: 4em;
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 1.2em;
     justify-self: center;
     vertical-align: middle;
-    line-height: 70px;
-    margin-bottom: 30px;
+    line-height: 4em;
+    margin-bottom: 2em;
 }
 
 .beskrivelse-av-ladepunkt {
-    width: 550px;
-    height: 560px;
+    width: 100%;
+    height: 100%;
 }
 
 .fasiliteter {
@@ -161,7 +169,7 @@ li {
 .fasilitet {
     display: list-item;
     list-style: circle;
-    line-height: 30px;
+    line-height: 1.5em;
 }
 
 .beregn-ladetid {
@@ -171,45 +179,48 @@ li {
     grid-row: 3;
     justify-self: center;
     width: max-content;
-    height: 95px;
+    height: 145%;
     filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
     background: #082D7F;
-    border-radius: 40px;
+    border-radius: 2em;
 }
 
 .ladetid-knapp-text {
     color: #ffffff;
     font-family: sans-serif;
-    font-size: 26px;
+    font-size: 2em;
     justify-self: center;
     align-self: center;
-    padding: 0px 20px 0px 20px;
+    padding: 0 1.5em 0 1.5em;
 }
 
 .dropdown {
     display: grid;
-    width: 315px;
-    height: 60px;
+    width: 13em;
+    height: 3.5em;
     text-align: center;
     background: #FFFFFF;
     border: none;
     box-sizing: border-box;
-    border-radius: 20px;
-    justify-self: start;
+    border-radius: 1.5em;
+    justify-self: center;
     align-self: center;
-    margin-left: 17.5px;
     cursor: pointer;
 }
 
-.dropdown:before {
+.ladeeffekt {
+    margin-left: 1em;
+}
+
+.dropdown:after {
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #082D7F;
+    border-left: .6em solid transparent;
+    border-right: .6em solid transparent;
+    border-top: .6em solid #082D7F;
     position: relative;
-    top: 2em;
-    left: 17em;
+    left: 11em;
+    bottom: 2em;
     content: "";
 }
 
@@ -217,9 +228,9 @@ li {
     width: inherit;
     height: inherit;
     border: none;
-    border-radius: 20px;
+    border-radius: 2em;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: 1.5em;
     align-self: center;
     text-align: center;
     text-align-last: center;
@@ -233,7 +244,7 @@ li {
 
 #ladetid-knapp {
     border: none;
-    border-radius: 40px;
+    border-radius: 2em;
     background-color: #082D7F;
     cursor: pointer;
     outline: none;
@@ -244,7 +255,7 @@ li {
     grid-column: 2;
     justify-self: center;
     display: none;
-    padding-top: 30px;
+    padding-top: 3em;
 }
 
 .waves {
@@ -259,7 +270,7 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 3fr;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 2 / 6;
     padding-top: 1.5em;
     padding-left: 4em;
 }
@@ -281,7 +292,7 @@ li {
 }
 
 #kart-norge {
-    padding-left: 3em;
+    margin-left: 3em;
 }
 
 #about-text {
@@ -290,17 +301,17 @@ li {
 
 #valgt-fylke-knapp {
     justify-self: center;
-    width: 200px;
-    height: 75px;
+    width: 15em;
+    height: 3em;
     filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.25));
     background-color: #082D7F;
     color: #ffffff;
     text-align: center;
     vertical-align: middle;
-    line-height: 75px;
+    line-height: 3em;
     font-family: sans-serif;
     font-size: 1.4em;
-    border-radius: 40px;
+    border-radius: 2em;
     text-decoration: none;
     border: none;
     outline: none;
@@ -320,4 +331,5 @@ li {
     grid-row: 3;
     gap: 3em;
     justify-content: center;
+    padding-top: 5em;
 }

@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
 
-<body>
+<body style="background-image: url(./img/Bakgrunn_navigasjon.png);">
     <a href="index.html" class="logo-div">
         <img src="img/Logo.png" alt="logo">
         <h1>ChaBo AS</h1>
     </a>
     <a href="vestland.html" class="tilbake-knapp">Tilbake</a>
-    <img src="img/Sun.png" alt="sol" class="sun">
     <div class="ladepunkt-navn">
         <h2>Bryggen i Bergen</h2>
         <hr>
@@ -47,7 +46,7 @@
         </section>
     </div>
     <div class="beregn-ladetid">
-        <div class="dropdown">
+        <div class="dropdown ladeeffekt">
             <select name="kwh" id="kwh">
                 <option value="70kwh">70 kWh</option>
                 <option value="140kwh">140 kWh</option>
@@ -57,7 +56,6 @@
         <button id="ladetid-knapp"><strong class="ladetid-knapp-text">Beregn ladetid</strong></button>
     </div>
     <img src="./img/grafogtabell70kwh.png" class="graf-og-tabell" id="graf-og-tabell" alt="graf-og-tabell">
-    <img src="./img/waves.png" alt="bølger" class="waves">
     <!--  Laster javascript på slutten av body slik at siden skal begynne å laste andre elementer først så brukeren ser noe på skjermen, da oppfatter brukeren siden som raskere.-->
     <script src="./js/index.js"></script>
 </body>
