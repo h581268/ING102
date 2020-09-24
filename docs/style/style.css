@@ -222,14 +222,16 @@ li {
     font-size: 22px;
     align-self: center;
     text-align: center;
+    text-align-last: center;
     background-color: #ffffff;
     appearance: none;
     cursor: pointer;
     -moz-appearance: none;
     -webkit-appearance: none;
+    outline: none;
 }
 
-#bergen-ladetid-knapp {
+#ladetid-knapp {
     border: none;
     border-radius: 40px;
     background-color: #082D7F;
@@ -301,6 +303,7 @@ li {
     border-radius: 40px;
     text-decoration: none;
     border: none;
+    outline: none;
     cursor: pointer;
 }
 
