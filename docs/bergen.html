@@ -36,6 +36,7 @@
             <ul>
                 <li>50kW</li>
                 <li>150kW</li>
+                <li>250kW</li>
             </ul>
             <h3>Fasiliteter i nærheten</h3>
             <ul class="fasiliteter">
@@ -47,15 +48,15 @@
     </div>
     <div class="beregn-ladetid">
         <div class="dropdown ladeeffekt">
-            <select name="kwh" id="kwh">
-                <option value="70kwh">70 kWh</option>
-                <option value="140kwh">140 kWh</option>
-                <option value="210kwh">210 kWh</option>
+            <select name="kw" id="kw">
+                <option value="50kw">50 kW</option>
+                <option value="150kw">150 kW</option>
+                <option value="250kw">250 kW</option>
             </select>
         </div>
         <button id="ladetid-knapp"><strong class="ladetid-knapp-text">Beregn ladetid</strong></button>
     </div>
-    <img src="./img/grafogtabell70kwh.png" class="graf-og-tabell" id="graf-og-tabell" alt="graf-og-tabell">
+    <img src="" class="graf-og-tabell" id="graf-og-tabell" alt="graf-og-tabell">
     <!--  Laster javascript på slutten av body slik at siden skal begynne å laste andre elementer først så brukeren ser noe på skjermen, da oppfatter brukeren siden som raskere.-->
     <script src="./js/index.js"></script>
 </body>

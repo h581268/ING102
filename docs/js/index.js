@@ -23,6 +23,14 @@ if (knappBeregnladetid) {
     // tar ibruk riktig verdi i dropdown og viser riktig tabell og graf
     let beregnLadetid = () => {
         knappBeregnladetid.addEventListener("click", () => {
+            let value = document.getElementById("kw").value;
+            if (value === "50kw") {
+                document.getElementById("graf-og-tabell").src = "./img/50kW.png"
+            } else if (value === "150kw") {
+                document.getElementById("graf-og-tabell").src = "./img/150kW.png"
+            } else {
+                document.getElementById("graf-og-tabell").src = "./img/250kW.png"
+            }
             document.getElementById("graf-og-tabell").style.display = "block";
         });
     }
