@@ -250,7 +250,7 @@ li {
     outline: none;
 }
 
-.graf-og-tabell {
+.graf {
     grid-row: 4;
     grid-column: 2;
     justify-self: center;

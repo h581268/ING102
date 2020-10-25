@@ -25,13 +25,19 @@ if (knappBeregnladetid) {
         knappBeregnladetid.addEventListener("click", () => {
             let value = document.getElementById("kw").value;
             if (value === "50kw") {
-                document.getElementById("graf-og-tabell").src = "./img/50kW.png"
+                document.getElementById("250kw").style.display = "none";
+                document.getElementById("150kw").style.display = "none";
+                document.getElementById("50kw").style.display = "block";
+
             } else if (value === "150kw") {
-                document.getElementById("graf-og-tabell").src = "./img/150kW.png"
+                document.getElementById("250kw").style.display = "none";
+                document.getElementById("50kw").style.display = "none";
+                document.getElementById("150kw").style.display = "block";
             } else {
-                document.getElementById("graf-og-tabell").src = "./img/250kW.png"
+                document.getElementById("50kw").style.display = "none";
+                document.getElementById("150kw").style.display = "none";
+                document.getElementById("250kw").style.display = "block";
             }
-            document.getElementById("graf-og-tabell").style.display = "block";
         });
     }
 
