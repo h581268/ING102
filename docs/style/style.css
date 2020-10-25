@@ -256,6 +256,7 @@ li {
     justify-self: center;
     display: none;
     padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .waves {
