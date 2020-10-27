@@ -253,10 +253,23 @@ li {
 .graf {
     grid-row: 4;
     grid-column: 2;
+    gap: 1em;
     justify-self: center;
     display: none;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+
+.tabell {
+    grid-row: 1;
+    grid-column: 2;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+td {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
 }
 
 .waves {
