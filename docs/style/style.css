@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 0%;
+    font-family: sans-serif;
 }
 
 img {
@@ -17,25 +18,21 @@ img {
 
 h1 {
     color: #082D7F;
-    font-family: sans-serif;
     font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
     color: #082D7F;
-    font-family: sans-serif;
     font-size: 2em;
     margin-bottom: 0;
 }
 
 h3 {
-    font-family: sans-serif;
     font-size: 1.5em;
 }
 
 p {
-    font-family: sans-serif;
     color: #082D7F;
     font-size: 1em;
     line-height: 1.5em;
@@ -58,7 +55,6 @@ ul {
 
 li {
     display: inline;
-    font-family: sans-serif;
     padding-right: .8em;
     font-size: 1.3em;
 }
@@ -88,7 +84,6 @@ li {
     text-align: center;
     vertical-align: middle;
     line-height: 2.5em;
-    font-family: sans-serif;
     font-size: 1.8em;
     border-radius: 10em;
     margin-top: 1em;
@@ -187,7 +182,6 @@ li {
 
 .ladetid-knapp-text {
     color: #ffffff;
-    font-family: sans-serif;
     font-size: 2em;
     justify-self: center;
     align-self: center;
@@ -229,7 +223,6 @@ li {
     height: inherit;
     border: none;
     border-radius: 2em;
-    font-family: sans-serif;
     font-size: 1.5em;
     align-self: center;
     text-align: center;
@@ -324,7 +317,6 @@ th {
     text-align: center;
     vertical-align: middle;
     line-height: 3em;
-    font-family: sans-serif;
     font-size: 1.4em;
     border-radius: 2em;
     text-decoration: none;
@@ -347,4 +339,17 @@ th {
     gap: 3em;
     justify-content: center;
     padding-top: 5em;
+}
+
+#matlab {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    background-color: #082D7F;
+    color: #ffffff;
+    height: 2em;
+    width: 12em;
+    justify-self: center;
+    align-content: center;
+    border-radius: 2em;
 }
